@@ -34,8 +34,6 @@ class DBManager:
             self.connection = None
             self.cursor = None
 
-            #raise  # Убрать, чтобы программа не крашилась
-
     def disconnect(self):
         if self.connection:
             self.cursor.close()
